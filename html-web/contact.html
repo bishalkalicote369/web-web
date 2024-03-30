@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+  </head>
+  <body>
+    <h1>Contact me here </h1>
+    <fieldset>
+      <legend>YOUR INFORMATION</legend>
+      <form action="mailto:bishalkalicote@gmail.com?subject=hi" method="post" enctype="text/plain">
+        <p>
+          <label for="name">Name:</label><br>
+          <input id="name" type="text" placeholder="Enter your Name" name="username" />
+        </p>
+        <p>
+          <label for="email">Email:</label><br>
+          <input id="email" type="email" placeholder="Enter your Email" name="email" />
+        </p>
+        <p>
+          <h3>select your gender</h3>
+          <input type="radio" name="gender" value="male" id="male">
+          <label for="male">Male</label>
+
+          <input type="radio" name="gender" value="female" id="female">
+          <label for="female">Female</label>
+
+        </p>
+        <p>
+          <h3>select your hobbies</h3>
+          <input type="checkbox" name="hobbies" value="reading" id="reading">
+          <label for="reading">Reading</label>
+          <input type="checkbox" name="hobbies" value="dancing" id="dancing">
+          <label for="dancing">Dancing</label>
+
+        </p>
+        <p>
+          <h3>select your country</h3>
+          <label for="country">country</label>
+          <select name="country" id="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+          </select>
+        </p>
+        <p>
+          <h3>Select Your Fav Coffee</h3>
+
+          <select name="coffee" id="coffee">
+            <optgroup label="Strong Cofee">
+              <option value="expresso">Expresso</option>
+              <option value="mocha">Mochiyato</option>
+            </optgroup>
+            <optgroup label="Light Cofee">
+              <option value="americano">Americano</option>
+              <option value="latte">Latte</option>
+            </optgroup>
+          </select>
+        </p>
+        <p>
+          <label for="message">Message:</label><br>
+          <textarea id="message" placeholder="Enter your Message" name="message"></textarea>
+        </p>
+        <button type="submit">Submit</button>
+      </form>
+    </fieldset>
+
+  </body>
+</html>
