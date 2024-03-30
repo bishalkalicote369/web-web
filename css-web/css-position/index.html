@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-position</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box{
+        height: 200px;
+        width:  200px;
+        margin-top: 30px;
+        margin-left: 40px;
+        background-color: blue;
+        border: 2px solid black;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+
+       
+      }
+      .bx2{
+        height: 200px;
+        width:  200px;
+        margin-top: 50px;
+        margin-left: 60px;
+        background-color: rgb(189, 41, 31);
+        border: 2px solid rgb(22, 132, 136);
+        position: absolute;
+        top: 0px;
+        left:0px;
+        z-index: 2;
+       
+        
+      }
+      .bx3{
+        height: 200px;
+        width:  200px;
+        margin-top: 70px;
+        margin-left: 80px;
+        background-color: rgb(135, 175, 24);
+        border: 2px solid rgb(143, 29, 29);
+        position: absolute;
+        top: 0px;
+        left:0px;
+        z-index: 3;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A officiis in ex impedit voluptas
+      eveniet similique fugiat voluptatum iure voluptate dolor temporibus laborum, est nostrum esse
+      mollitia quam iste. Animi.</p> -->
+    <div class="bx2"></div>
+    <div class="bx3"></div>
+
+  </body>
+</html>

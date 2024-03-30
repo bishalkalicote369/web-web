@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute-selector</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      img[alt='car']{
+        width: 800px;
+        height: 600px;
+      }
+      input[type='email']+label{
+        border: 2px red solid;
+
+      }
+      input[type='text']:focus{
+        border: 2px red solid;
+        outline: 4px green solid;
+
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/css-web/attribute-css/image_search_1706166488835.jpg" alt="car">
+    <br>
+    <img src="/css-web/attribute-css/image_search_1706166513265.jpg" alt="lambo">
+    <div style="padding:  10px;">
+      <input type="email" placeholder="email">
+      <label for="email">email</label>
+      <input type="text" placeholder="password">
+      <label for="text">password</label>
+      <h1>Lorem, ipsum.s</h1>
+    </div>
+
+  </body>
+</html>
