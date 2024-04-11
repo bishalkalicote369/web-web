@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Example</title>
+    <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      margin: 5px;
+      display: inline-block;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+    // Get the container element
+    var container = document.getElementById("container");
+
+    // Define the number of boxes to create
+    var numBoxes = 9;
+
+    // Loop through and create boxes
+    for (var i = 0; i < numBoxes; i++) {
+      // Create a new div element
+      var box = document.createElement("div");
+
+      // Set the class of the box
+      box.className = "box";
+
+      // Set some text inside the box
+      box.textContent = "Box " + (i + 1);
+
+      // Append the box to the container
+      container.appendChild(box);
+    }
+  </script>
+  </body>
+</html>

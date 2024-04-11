@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+    #signup-container {
+      width: 300px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], .result-box input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .result-box {
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="signup-container">
+      <h2>Signup</h2>
+      <form id="signup-form">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+        <div class="result-box">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" readonly>
+        </div>
+        <button type="submit">Generate username</button>
+      </form>
+    </div>
+
+    <script>
+    document.getElementById("signup-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the full name entered by the user
+      var fullName = document.getElementById("full-name").value;
+
+      // Construct the username using string interpolation
+      var username = `@${fullName}${fullName.length}`;
+
+      // Display the generated username
+      document.getElementById("username").value = username;
+    });
+  </script>
+  </body>
+</html>
